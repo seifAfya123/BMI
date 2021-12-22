@@ -41,19 +41,23 @@ class Result extends StatelessWidget {
             children: [
               Text(
                 "Gender : ${ismale ? "male" : "female"}",
-                style: textStyle_l,
+                style: textStyle_l.copyWith(
+                    fontSize: MediaQuery.of(context).size.width * 0.08),
               ),
               Text(
                 "result : ${result.toStringAsFixed(2)}",
-                style: textStyle_l,
+                style: textStyle_l.copyWith(
+                    fontSize: MediaQuery.of(context).size.width * 0.08),
               ),
               Text(
                 "Healthness : $resultweight",
-                style: textStyle_l,
+                style: textStyle_l.copyWith(
+                    fontSize: MediaQuery.of(context).size.width * 0.08),
               ),
               Text(
                 "Age : $age",
-                style: textStyle_l,
+                style: textStyle_l.copyWith(
+                    fontSize: MediaQuery.of(context).size.width * 0.08),
               )
             ],
           ),

@@ -67,16 +67,18 @@ class _MyHomePageState extends State<MyHomePage> {
                       children: [
                         Text(
                           '${heightvalue}',
-                          style: const TextStyle(
+                          style: TextStyle(
                               color: Colors.white,
-                              fontSize: 35,
+                              fontSize:
+                                  MediaQuery.of(context).size.width * 0.07,
                               fontWeight: FontWeight.bold),
                         ),
-                        const Text(
+                        Text(
                           "  CM",
                           style: TextStyle(
                               color: Colors.black,
-                              fontSize: 35,
+                              fontSize:
+                                  MediaQuery.of(context).size.width * 0.07,
                               fontWeight: FontWeight.bold),
                         ),
                       ],
@@ -131,12 +133,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     }));
                   });
                 },
-                child: const Text(
-                  "Calculate",
-                  style: TextStyle(color: Colors.black, fontSize: 30),
-                ),
+                child: Text("Calculate", style: textStyle_2),
               ),
-            )
+            ),
           ],
         ),
       ),
@@ -167,7 +166,8 @@ class _MyHomePageState extends State<MyHomePage> {
               const SizedBox(height: 20),
               Text(
                 type == "male" ? "Male" : "female",
-                style: textStyle_l,
+                style: textStyle_l.copyWith(
+                    fontSize: MediaQuery.of(context).size.width * 0.07),
               ),
             ],
           ),
@@ -187,21 +187,14 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              type,
-              style: const TextStyle(
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-                fontSize: 25,
-              ),
-            ),
+            Text(type, style: textStyle_2),
             const SizedBox(height: 10),
             Text(
               type == "Age" ? '$age' : '$weight',
-              style: const TextStyle(
+              style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Colors.black,
-                  fontSize: 30),
+                  fontSize: MediaQuery.of(context).size.width * 0.07),
             ),
             const SizedBox(
               height: 10,
