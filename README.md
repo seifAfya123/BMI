@@ -17,8 +17,9 @@ samples, guidance on mobile development, and a full API reference.
 
 ## project overview
 
-#1
+##1
 ![bmi1](https://user-images.githubusercontent.com/59228910/148976771-1e283226-6ce6-4cb9-8a86-ac8d32355905.jpeg)
 
-#2
-![bmi2](https://user-images.githubusercontent.com/59228910/148976376-2df6b6dd-5445-4a52-81e3-4e3cb4e6d7ad.jpeg)
+##2
+
+![bmi2](https://user-images.githubusercontent.com/59228910/148977050-840d4f0b-19a6-4954-9733-e51a65dbd30e.jpeg)
